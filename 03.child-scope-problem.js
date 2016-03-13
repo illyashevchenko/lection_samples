@@ -1,8 +1,8 @@
 angular.module('scopeSoupRecipe', [])
   .directive('itemsList', () => ({
     link($scope) {
-      $scope.list     = ['1.0', '1.2', '1.3'];
-      $scope.selected = null;
+      $scope.list       = ['1.3', '1.4' , '1.5'];
+      $scope.selected   = null;
 
       $scope.select = function (item) {
         $scope.selected = item;
@@ -15,8 +15,8 @@ angular.module('scopeSoupRecipe', [])
         $scope.select($scope.list[index]);
       };
     },
-    template: `<div ng-repeat = "item in list track by $index"
+    template: `<div ng-repeat = "item in list | filter : version"
                     ng-click  = "select(item)">{{ item }}</div>
-               <input ng-if    = "editable"
-                      ng-model = "selected" />`
+              <input ng-if    = "!disableFiltering"
+                     ng-model = "version" />`
   }));

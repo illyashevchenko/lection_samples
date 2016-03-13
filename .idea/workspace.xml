@@ -4,7 +4,6 @@
     <list default="true" id="81f2e1c8-b1d9-4220-9164-6d305a4fc7e1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/01.directive-old.js" afterPath="$PROJECT_DIR$/01.directive-old.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/02.controllerAs.js" afterPath="$PROJECT_DIR$/02.controllerAs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/03.child-scope-problem.html" afterPath="$PROJECT_DIR$/03.child-scope-problem.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/03.child-scope-problem.js" afterPath="$PROJECT_DIR$/03.child-scope-problem.js" />
     </list>
     <ignored path="code.iws" />
@@ -36,27 +35,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="03.child-scope-problem.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="03.child-scope-problem.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/03.child-scope-problem.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.35856575">
-              <caret line="18" column="47" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="57" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
               <folding>
-                <marker date="1457901612000" expanded="true" signature="537:600" placeholder="..." />
-                <marker date="1457901612000" expanded="true" signature="645:691" placeholder="..." />
+                <marker date="1457902875000" expanded="true" signature="545:608" placeholder="..." />
+                <marker date="1457902875000" expanded="true" signature="661:705" placeholder="..." />
+                <marker date="1457902875000" expanded="true" signature="695:705" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="02.controllerAs.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="02.controllerAs.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/02.controllerAs.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="39" selection-start-line="0" selection-start-column="39" selection-end-line="0" selection-end-column="39" />
+            <state vertical-scroll-proportion="0.27888447">
+              <caret line="14" column="36" selection-start-line="0" selection-start-column="0" selection-end-line="22" selection-end-column="6" />
               <folding>
-                <marker date="1457901492000" expanded="true" signature="548:611" placeholder="..." />
-                <marker date="1457901492000" expanded="true" signature="606:611" placeholder="..." />
+                <marker date="1457902934000" expanded="true" signature="556:624" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -66,10 +65,10 @@
         <entry file="file://$PROJECT_DIR$/01.directive-old.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="36" selection-start-line="0" selection-start-column="36" selection-end-line="0" selection-end-column="36" />
+              <caret line="0" column="37" selection-start-line="0" selection-start-column="37" selection-end-line="0" selection-end-column="37" />
               <folding>
-                <marker date="1457901492000" expanded="true" signature="533:596" placeholder="..." />
-                <marker date="1457901492000" expanded="true" signature="591:596" placeholder="..." />
+                <marker date="1457902764000" expanded="true" signature="536:599" placeholder="..." />
+                <marker date="1457902764000" expanded="true" signature="594:599" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -133,9 +132,9 @@
         <option value="$PROJECT_DIR$/21.isolated-scope-bind-to-controller.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/03.child-scope-problem.html" />
-        <option value="$PROJECT_DIR$/02.controllerAs.js" />
-        <option value="$PROJECT_DIR$/01.directive-old.js" />
         <option value="$PROJECT_DIR$/03.child-scope-problem.js" />
+        <option value="$PROJECT_DIR$/01.directive-old.js" />
+        <option value="$PROJECT_DIR$/02.controllerAs.js" />
       </list>
     </option>
   </component>
@@ -495,35 +494,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/03.child-scope-problem.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+          <folding>
+            <marker date="1457902875000" expanded="true" signature="545:608" placeholder="..." />
+            <marker date="1457902875000" expanded="true" signature="661:705" placeholder="..." />
+            <marker date="1457902875000" expanded="true" signature="695:705" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/01.directive-old.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="36" selection-start-line="0" selection-start-column="36" selection-end-line="0" selection-end-column="36" />
+          <caret line="0" column="37" selection-start-line="0" selection-start-column="37" selection-end-line="0" selection-end-column="37" />
           <folding>
-            <marker date="1457901492000" expanded="true" signature="533:596" placeholder="..." />
-            <marker date="1457901492000" expanded="true" signature="591:596" placeholder="..." />
+            <marker date="1457902764000" expanded="true" signature="536:599" placeholder="..." />
+            <marker date="1457902764000" expanded="true" signature="594:599" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/02.controllerAs.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="39" selection-start-line="0" selection-start-column="39" selection-end-line="0" selection-end-column="39" />
+        <state vertical-scroll-proportion="0.27888447">
+          <caret line="14" column="36" selection-start-line="0" selection-start-column="0" selection-end-line="22" selection-end-column="6" />
           <folding>
-            <marker date="1457901492000" expanded="true" signature="548:611" placeholder="..." />
-            <marker date="1457901492000" expanded="true" signature="606:611" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/03.child-scope-problem.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35856575">
-          <caret line="18" column="47" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="57" />
-          <folding>
-            <marker date="1457901612000" expanded="true" signature="537:600" placeholder="..." />
-            <marker date="1457901612000" expanded="true" signature="645:691" placeholder="..." />
+            <marker date="1457902934000" expanded="true" signature="556:624" placeholder="..." />
           </folding>
         </state>
       </provider>
