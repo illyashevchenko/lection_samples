@@ -1,4 +1,4 @@
-angular.module('app')
+angular.module('controllerAsRecipe', [])
   .directive('itemsList', () => ({
     controller() {
       this.list = ['1.0', '1.2', '1.3'];
@@ -17,6 +17,6 @@ angular.module('app')
     },
     controllerAs: 'ctrl',
 
-    template: `<div ng-repeat = "item in ctrl.list"
-                    ng-click  = "ctrl.select(item)"></div>`
+    template: `<div ng-repeat = "item in ctrl.list track by $index"
+                    ng-click  = "select(item)">{{ item }}</div>`
   }));

@@ -1,4 +1,4 @@
-angular.module('app')
+angular.module('scopeSoupRecipe', [])
   .directive('itemsList', () => ({
     link($scope) {
       $scope.list = ['1.0', '1.2', '1.3'];
@@ -15,6 +15,6 @@ angular.module('app')
         $scope.select($scope.list[index]);
       };
     },
-    template: `<div ng-repeat = "item in list"
-                    ng-click  = "select(item)"></div>`
+    template: `<div ng-repeat = "item in list track by $index"
+                    ng-click  = "select(item)">{{ item }}</div>`
   }));
