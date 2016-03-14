@@ -17,5 +17,6 @@ angular.module('scopeSoupRecipe', [])
     },
     template: `<div ng-repeat = "item in list | filter : version"
                     ng-click  = "select(item)">{{ item }}</div>
+               <div ng-bind   = "selected"></div>
                <input ng-model = "version" />`
   }));

@@ -1,22 +1,28 @@
-angular.module('app')
+class ItemsListCtrl {
+  constructor() {
+    this.selected = null;
+  }
+
+
+  select(item) {
+    this.selected = item;
+  }
+}
+
+
+angular.module('isolatedScope', [])
   .directive('itemsList', () => ({
-    scope   : {
+    scope           : {
       list: '=itemsList'
     },
-    controller() {
-      this.selected = null;
+    bindToController: true,
 
-      this.select = (item) =>
-        $scope.selected = item;
-
-      this.selectNext = () => {
-        let index = $scope.list.indexOf($scope.selected) + 1;
-        index     = Math.min($scope.list.length, index);
-
-        $scope.select($scope.list[index]);
-      };
-    },
+    controller  : 'ItemsListCtrl',
     controllerAs: 'ctrl',
-    template: `<div ng-repeat = "item in ctrl.list"
-                    ng-click  = "ctrl.select(item)"></div>`
-  }));
+
+    template: `<div ng-repeat = "item in ctrl.list | filter : ctrl.version"
+                    ng-click  = "ctrl.select(item)">{{ item }}</div>
+               <div ng-bind   = "ctrl.selected"></div>
+               <input ng-model = "ctrl.version" />`
+  }))
+  .controller('ItemsListCtrl', ItemsListCtrl);

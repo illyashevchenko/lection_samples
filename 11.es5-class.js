@@ -1,4 +1,4 @@
-angular.module('controllerAsRecipe', [])
+angular.module('controllerAsClass', [])
   .directive('itemsList', () => ({
     controller  : 'ItemsListCtrl',
     controllerAs: 'ctrl',
@@ -7,10 +7,10 @@ angular.module('controllerAsRecipe', [])
                     ng-click  = "ctrl.select(item)">{{ item }}</div>
                <input ng-model = "ctrl.version" />`
   }))
-.controller('ItemsListCtrl', ItemsListCtrl);
+  .controller('ItemsListCtrl', ItemsListCtrl);
 
 
-function ItemsListCtrl () {
+function ItemsListCtrl() {
   this.list     = ['1.3', '1.4', '1.5'];
   this.selected = null;
 }
@@ -27,9 +27,6 @@ ItemsListCtrl.prototype.selectNext = function () {
 
   this.select(this.list[index]);
 };
-
-
-
 
 
 // just for code highlighting
