@@ -1,7 +1,7 @@
 angular.module('controllerAsRecipe', [])
   .directive('itemsList', () => ({
     controller() {
-      this.list = ['1.0', '1.2', '1.3'];
+      this.list     = ['1.3', '1.4', '1.5'];
       this.selected = null;
 
       this.select = function (item) {

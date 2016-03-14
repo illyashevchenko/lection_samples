@@ -1,7 +1,7 @@
 angular.module('scopeSoupRecipe', [])
   .directive('itemsList', () => ({
     link($scope) {
-      $scope.list = ['1.0', '1.2', '1.3'];
+      $scope.list     = ['1.3', '1.4', '1.5'];
       $scope.selected = null;
 
       $scope.select = function (item) {
