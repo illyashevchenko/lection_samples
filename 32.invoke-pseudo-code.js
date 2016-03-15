@@ -1,6 +1,9 @@
-function $controllerInstantiate(expression, locals) {
-  var instance = Object.create(expression.prototype);
-  return expression.apply(instance, locals)
+function instantiatePseudo(controller, locals, bindings) {
+  var instance = Object.create(controller.prototype); // Somewhere in $ControllerProvider
+
+  $compile.__initializeDirectiveBindings(instance, bindings); // somewhere in $compile
+
+  return controller.apply(instance, locals); // $injector.invoke()
 }
 
 
@@ -23,7 +26,7 @@ angular.module('isolatedScope', [])
 
 
 function ItemsListCtrl() {
-  this.selected = this.list[0];
+  this.select(this.list[0]);
 }
 
 
@@ -31,3 +34,8 @@ ItemsListCtrl.prototype.select = function (item) {
   this.selected = item;
 };
 
+
+
+var $compile = {
+  __initializeDirectiveBindings: () => {}
+};

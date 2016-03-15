@@ -1,6 +1,6 @@
 class ItemsListCtrl {
   constructor() {
-    this.selected = this.list[0];
+    this.select(this.list[0]);
   }
 
 
