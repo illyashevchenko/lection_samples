@@ -7,6 +7,28 @@ function instantiatePseudo(controller, locals, bindings) {
 }
 
 
+$controller = function (controller, locals, later) {
+  var instance = Object.create(controller.prototype);
+
+  if (later) {
+    return angular.extend(function () {
+      return controller.apply(instance, locals);
+    }, {
+      instance: instance
+    });
+  }
+};
+
+
+function ItemsListCtrl() {
+  this.select(this.list[0]);
+}
+
+
+ItemsListCtrl.prototype.select = function (item) {
+  this.selected = item;
+};
+
 
 angular.module('isolatedScope', [])
   .directive('itemsList', () => ({
@@ -23,19 +45,3 @@ angular.module('isolatedScope', [])
                <input ng-model = "ctrl.version" />`
   }))
   .controller('ItemsListCtrl', ItemsListCtrl);
-
-
-function ItemsListCtrl() {
-  this.select(this.list[0]);
-}
-
-
-ItemsListCtrl.prototype.select = function (item) {
-  this.selected = item;
-};
-
-
-
-var $compile = {
-  __initializeDirectiveBindings: () => {}
-};

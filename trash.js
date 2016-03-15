@@ -1,0 +1,3 @@
+var $compile = {
+  __initializeDirectiveBindings: () => {}
+};

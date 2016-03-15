@@ -1,15 +1,3 @@
-angular.module('controllerAsClass', [])
-  .directive('itemsList', () => ({
-    controller  : 'ItemsListCtrl',
-    controllerAs: 'ctrl',
-
-    template: `<div ng-repeat = "item in ctrl.list | filter : ctrl.version"
-                    ng-click  = "ctrl.select(item)">{{ item }}</div>
-               <input ng-model = "ctrl.version" />`
-  }))
-  .controller('ItemsListCtrl', ItemsListCtrl);
-
-
 function ItemsListCtrl() {
   this.list     = ['1.3', '1.4', '1.5'];
   this.selected = null;
@@ -27,6 +15,19 @@ ItemsListCtrl.prototype.selectNext = function () {
 
   this.select(this.list[index]);
 };
+
+
+angular.module('controllerAsClass', [])
+  .directive('itemsList', () => ({
+    controller  : 'ItemsListCtrl',
+    controllerAs: 'ctrl',
+
+    template: `<div ng-repeat = "item in ctrl.list | filter : ctrl.version"
+                    ng-click  = "ctrl.select(item)">{{ item }}</div>
+               <div ng-bind   = "ctrl.selected"></div>
+               <input ng-model = "ctrl.version" />`
+  }))
+  .controller('ItemsListCtrl', ItemsListCtrl);
 
 
 // just for code highlighting

@@ -1,23 +1,20 @@
-class ItemsListCtrl {
+import ItemsListCtrl from './12.es6-class-controller';
+
+class ItemsListDefaultCtrl extends ItemsListCtrl {
   constructor() {
-    this.selected = null;
-  }
-
-
-  select(item) {
-    this.selected = item;
+    super();
+    this.select(this.list[0]);
   }
 }
 
-
-angular.module('isolatedScope', [])
-  .directive('itemsList', () => ({
+angular.module('es6Inheritance', [])
+  .directive('itemsListDefault', () => ({
     scope           : {},
     bindToController: {
-      list: '=itemsList'
+      list: '=itemsListDefault'
     },
 
-    controller  : ItemsListCtrl,
+    controller  : ItemsListDefaultCtrl,
     controllerAs: 'ctrl',
 
     template: `<div ng-repeat = "item in ctrl.list | filter : ctrl.version"
