@@ -17,7 +17,7 @@ angular.module('bindings', [])
     scope           : {},
     bindToController: {
       defaultIndex: '@defaultItemIndex',
-      list        : '<itemsListDefault',
+      list        : '=itemsListDefault',
       onSelect    : '&onItemSelect'
     },
 

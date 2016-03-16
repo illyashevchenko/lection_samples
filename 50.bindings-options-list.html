@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="angular.js"></script>
+  <script src="50.bindings-options-list.js"></script>
+</head>
+
+<body ng-app="bindings" ng-controller="Main as main">
+<div items-list-default = "main.list"
+     default-item-index = "2"
+     on-item-select     = "main.onVersionChange(item, this, $locals)"></div>
+</body>
+
+</html>

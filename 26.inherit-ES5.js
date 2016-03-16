@@ -26,8 +26,5 @@ angular.module('es5Inheritance', [])
 
     controller  : ItemsListDefaultCtrl,
     controllerAs: 'ctrl',
-
-    template: `<div ng-repeat = "item in ctrl.list | filter : ctrl.version"
-                    ng-click  = "ctrl.select(item)">{{ item }}</div>
-               <input ng-model = "ctrl.version" />`
+    templateUrl : './items-list-default.html'
   }));

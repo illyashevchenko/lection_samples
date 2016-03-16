@@ -32,16 +32,14 @@ ItemsListCtrl.prototype.select = function (item) {
 
 angular.module('isolatedScope', [])
   .directive('itemsList', () => ({
-    controller  : 'ItemsListCtrl',
-    controllerAs: 'ctrl',
     scope: {
       list: '=itemsList'
     },
+
     bindToController: true,
 
-    template: `<div ng-repeat = "item in ctrl.list | filter : ctrl.version"
-                    ng-click  = "ctrl.select(item)">{{ item }}</div>
-               <div ng-bind   = "ctrl.selected"></div>
-               <input ng-model = "ctrl.version" />`
+    controller  : 'ItemsListCtrl',
+    controllerAs: 'ctrl',
+    templateUrl : './items-list-default.html'
   }))
   .controller('ItemsListCtrl', ItemsListCtrl);

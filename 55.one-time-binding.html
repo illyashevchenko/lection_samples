@@ -1,0 +1,8 @@
+<div items-list-default = ":: main.list"
+     default-item-index = "2"
+     on-item-select     = "main.onVersionChange(item)"></div>
+
+<div ng-repeat="item in ::ctrl.list"
+     ng-click="ctrl.select(item)">
+  {{:: item }}
+</div>
