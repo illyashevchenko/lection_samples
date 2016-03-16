@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Demo of two directives on one element</title>
+  <script src="angular.js"></script>
+  <script src="63.two-directives.js"></script>
+</head>
+<body ng-app="itemsListComposition" ng-controller="Main as main">
+<main>
+  <div ui-grid="gridOptions"
+       ui-grid-resize-columns
+       ui-grid-move-columns>
+  </div>
+
+  <div items-list         = "main.list"
+       items-list-default = "1">
+  </div>
+</main>
+</body>
+</html>

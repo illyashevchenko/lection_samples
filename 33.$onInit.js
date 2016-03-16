@@ -1,4 +1,4 @@
-class ItemsListCtrl {
+class ItemsListDefaultCtrl {
   constructor() {
   }
 
@@ -14,15 +14,14 @@ class ItemsListCtrl {
 }
 
 
-angular.module('isolatedScope', [])
-  .directive('itemsList', () => ({
+angular.module('onInit', [])
+  .directive('itemsListDefault', () => ({
     scope           : {},
     bindToController: {
-      list: '=itemsList'
+      list: '=itemsListDefault'
     },
 
-    controller  : 'ItemsListCtrl',
+    controller  : ItemsListDefaultCtrl,
     controllerAs: 'ctrl',
     templateUrl : './items-list-default.html'
-  }))
-  .controller('ItemsListCtrl', ItemsListCtrl);
+  }));
