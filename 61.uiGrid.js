@@ -1,9 +1,10 @@
+
 angular.module('uiGrid', [])
   .directive('uiGrid', () => ({
-    scope: true,
+    scope: {},
 
     bindToController: {
-      options: '=uiGrid'
+      options: '<uiGrid'
     },
 
     controller  : 'UiGridCtrl',
@@ -13,10 +14,10 @@ angular.module('uiGrid', [])
   }))
 
   .directive('uiGridMoveColumns', () => ({
-    scope: true,
+    scope: {},
 
     bindToController: {
-      options: '=uiGrid'
+      options: '<uiGrid'
     },
 
     controller  : 'UiGridMoveColumnsCtrl',

@@ -1,8 +1,7 @@
 import ItemsListCtrl from './12.es6-class-controller';
 
 class ItemsListDefaultCtrl extends ItemsListCtrl {
-  constructor() {
-    super();
+  $onInit() {
     this.select(this.list[0]);
   }
 }

@@ -19,7 +19,7 @@ angular.module('itemsListComposition', [])
     scope: true,
 
     bindToController: {
-      list: '=itemsList'
+      list: '<itemsList'
     },
 
     controller  : ItemsListCtrl,
@@ -34,7 +34,7 @@ angular.module('itemsListComposition', [])
     },
 
     bindToController: {
-      list        : '=itemsList',
+      list        : '<itemsList',
       defaultIndex: '@itemsListDefault'
     },
 

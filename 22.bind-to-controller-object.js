@@ -10,7 +10,7 @@ class ItemsListCtrl {
 }
 
 
-angular.module('isolatedScope', [])
+angular.module('bindings', [])
   .directive('itemsList', () => ({
     scope           : {},
     bindToController: {

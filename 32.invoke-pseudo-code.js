@@ -30,7 +30,7 @@ ItemsListCtrl.prototype.select = function (item) {
 };
 
 
-angular.module('isolatedScope', [])
+angular.module('invokeExplanation', [])
   .directive('itemsList', () => ({
     scope: {
       list: '=itemsList'
