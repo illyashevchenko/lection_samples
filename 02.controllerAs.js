@@ -1,7 +1,7 @@
 angular.module('controllerAsRecipe', [])
   .directive('itemsList', () => ({
     controller() {
-      this.list     = ['1.3', '1.4', '1.5'];
+      this.list     = ['1.3', '1.4', '1.5', '2.0'];
       this.selected = null;
 
       this.select = function (item) {
@@ -19,6 +19,6 @@ angular.module('controllerAsRecipe', [])
 
     template: `<div ng-repeat = "item in ctrl.list | filter : ctrl.version"
                     ng-click  = "ctrl.select(item)">{{ item }}</div>
-               <div ng-bind   = "ctrl.selected"></div>
+               <h3 ng-bind    = "ctrl.selected"></h3>
                <input ng-model = "ctrl.version" />`
   }));

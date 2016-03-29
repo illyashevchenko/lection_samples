@@ -1,7 +1,7 @@
 angular.module('scopeSoupRecipe', [])
   .directive('itemsList', () => ({
     link($scope) {
-      $scope.list     = ['1.3', '1.4', '1.5'];
+      $scope.list     = ['1.3', '1.4', '1.5', '2.0'];
       $scope.selected = null;
 
       $scope.select = function (item) {
@@ -17,6 +17,6 @@ angular.module('scopeSoupRecipe', [])
     },
     template: `<div ng-repeat = "item in list | filter : version"
                     ng-click  = "select(item)">{{ item }}</div>
-               <div ng-bind   = "selected"></div>
+               <h3 ng-bind    = "selected"></h3>
                <input ng-model = "version" />`
   }));
