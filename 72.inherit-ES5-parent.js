@@ -1,4 +1,4 @@
-angular.module('es5Inheritance')
+angular.module('es5Inheritance', [])
   .factory('ItemsListCtrlFactory', ItemsListCtrlFactory);
 
 

@@ -23,7 +23,7 @@ function ItemsListDefaultCtrl($controller, ItemsListCtrlFactory, $scope) {
 }
 
 
-angular.module('es5Inheritance', [])
+angular.module('es5Inheritance')
   .directive('itemsListDefault', () => ({
     scope           : {
       list: '=itemsListDefault'
