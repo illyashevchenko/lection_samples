@@ -1,4 +1,4 @@
-class ItemsListCtrl {
+class ItemsListDefaultCtrl {
   $onInit() {
     const defaultItem = this.list[this.defaultIndex];
     this.select(defaultItem);
@@ -21,7 +21,7 @@ angular.module('bindings', [])
       onSelect    : '&onItemSelect'
     },
 
-    controller  : ItemsListCtrl,
+    controller  : ItemsListDefaultCtrl,
     controllerAs: 'ctrl',
     templateUrl : './items-list-default.html'
   }))

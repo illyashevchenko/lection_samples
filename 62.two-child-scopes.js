@@ -16,7 +16,7 @@ angular.module('uiGrid', [])
     scope: true,
 
     bindToController: {
-      options: '=<iGrid'
+      options: '<iGrid'
     },
 
     controller  : 'UiGridMoveColumnsCtrl',

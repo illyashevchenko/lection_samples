@@ -3,5 +3,5 @@ angular.module('attributeApp', [])
     scope: {
       value: '@attrBind'
     },
-    template: '{{ value }}'
+    template: '{{:: value }}'
   }));

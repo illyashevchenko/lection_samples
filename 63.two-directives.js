@@ -44,7 +44,7 @@ angular.module('itemsListComposition', [])
 
 
   .controller('Main', function () {
-    this.list    = ['1.3', '1.4', '1.5', '2.0'];
+    this.list = ['1.3', '1.4', '1.5', '2.0'];
 
     this.onVersionChange = function (version, scope, locals) {
       console.log(version, scope, locals)
