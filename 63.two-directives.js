@@ -10,7 +10,7 @@ class ItemsListCtrl {
 
 class ItemsListDefaultCtrl {
   $onInit() {
-    this.itemCtrl.select(this.list[this.defaultIndex]);
+    this.itemsCtrl.select(this.list[this.defaultIndex]);
   }
 }
 
@@ -30,7 +30,7 @@ angular.module('itemsListComposition', [])
   .directive('itemsListDefault', () => ({
     scope  : true,
     require: {
-      itemCtrl: 'itemsList'
+      itemsCtrl: 'itemsList'
     },
 
     bindToController: {

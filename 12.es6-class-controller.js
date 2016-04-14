@@ -9,7 +9,6 @@ class ItemsListCtrl {
     this.selected = item;
   }
 
-
   selectNext() {
     let index = this.list.indexOf(this.selected) + 1;
     index     = Math.min(this.list.length - 1, index);
@@ -18,5 +17,13 @@ class ItemsListCtrl {
   }
 }
 
+ angular.module('controllerAsRecipe', [])
+.directive('itemsList', () => ({
+  controller  : ItemsListCtrl,
+  controllerAs: 'ctrl',
 
-export default ItemsListCtrl;
+  template: `<div ng-repeat  = "item in ctrl.list | filter : ctrl.version"
+                  ng-click   = "ctrl.select(item)">{{ item }}</div>
+             <h3 ng-bind     = "ctrl.selected"></h3>
+             <input ng-model = "ctrl.version" />`
+}));

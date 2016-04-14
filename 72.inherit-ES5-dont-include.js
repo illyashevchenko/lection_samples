@@ -10,10 +10,7 @@ function ItemsListDefaultCtrl($controller, ItemsListCtrlFactory, $scope) {
 
   ItemsListDefaultCtrl.prototype = Object.create(_super);
 
-
-  return $controller(ItemsListDefaultCtrl, {
-    $scope: $scope
-  });
+  return $controller(ItemsListDefaultCtrl, { $scope });
 }
 
 

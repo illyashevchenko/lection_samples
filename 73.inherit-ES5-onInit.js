@@ -12,9 +12,7 @@ function ItemsListDefaultCtrl($controller, ItemsListCtrlFactory, $scope) {
     this.select(this.list[0]);
   };
 
-  var instance = $controller(ItemsListDefaultCtrl, {
-    $scope: $scope
-  });
+  var instance = $controller(ItemsListDefaultCtrl, { $scope: $scope });
 
   angular.extend(instance, this);
   instance.$onInit();

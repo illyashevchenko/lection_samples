@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="angular.js"></script>
+</head>
+
+<body ng-app="one" ng-controller="Main as main">
+<script>
+  angular.module('one', [])
+      .controller('Main', function () {
+        this.template = 'h3.html';
+      });
+</script>
+  <ng-include src="'56.h3.html'"></ng-include>
+</body>
+
+</html>
